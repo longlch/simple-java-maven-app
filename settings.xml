@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <servers>
+    <server>
+      <id>artifactregistry</id>
+      <username>oauth2accesstoken</username>
+      <password>${GCLOUD_CREDS}</password>
+    </server>
+  </servers>
+
+  <profiles>
+    <profile>
+      <id>artifactregistry</id>
+      <repositories>
+        <repository>
+          <id>artifactregistry</id>
+          <url>artifactregistry://asia-east1-maven.pkg.dev/happy-427410/quickstart-java-repo</url>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+
+  <activeProfiles>
+    <activeProfile>artifactregistry</activeProfile>
+  </activeProfiles>
+
+</settings>
